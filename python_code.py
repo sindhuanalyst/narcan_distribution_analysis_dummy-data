@@ -30,10 +30,6 @@ plt.xlabel('Year')
 plt.ylabel('Month')
 plt.show()
 
-
-
-# Convert zip_code column to string
-df['zip_code'] = df['zip_code'].astype(str)
 # Extract 5-digit zip codes
 zip_code_extract = df['zip_code'].str.extractall(r'(\b\d{5}\b)')[0]
 # Count the frequency of zip codes
